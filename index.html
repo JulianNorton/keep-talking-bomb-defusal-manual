@@ -9,8 +9,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+    <div class="nav navbar-nav">
+      <a class="nav-item nav-link" href="#wires">Wires</a>
+      <a class="nav-item nav-link" href="#button">Button</a>
+      <a class="nav-item nav-link" href="#symbols">Symbols</a>
+      <a class="nav-item nav-link" href="#simon">Simon Says</a>
+      <a class="nav-item nav-link" href="#onfirst">Who’s on First</a>
+      <a class="nav-item nav-link" href="#memory">Memory</a>
+      <a class="nav-item nav-link" href="#morse">Morse Code</a>
+      <a class="nav-item nav-link" href="#wires-complicated">Complicated Wires</a>
+      <a class="nav-item nav-link" href="#wires-sequence">Wire Sequences</a>
+      <a class="nav-item nav-link" href="#maze">Mazes</a>
+      <a class="nav-item nav-link" href="#password">Passwords</a>
+    </div>
+  </nav>
   <section class="card">
-    <h2 id="wires" class="card-header">Wires</h2>
+    <h3 id="wires" class="card-header">Wires</h3>
     <div class="card-block">
       <dl>
         <div>
@@ -47,7 +62,7 @@
   </section>
 
   <section class="card">
-    <h2 id="button" class="card-header">The Button</h2>
+    <h3 id="button" class="card-header">The Button</h3>
     <div class="card-block">
       <dl>
         <dt>If the button is <span class="tag tag-primary">blue</span> and the button says <kbd>Abort</kbd></dt>
@@ -78,7 +93,10 @@
   </section>
 
   <section class="card">
-    <h2 id="symbols" class="card-header">Symbols</h2>
+    <h3 id="symbols" class="card-header">Symbols</h3>
+    <div class="card-block">
+      <img class="img-fluid" alt="original symbols image" src="img/symbols.png">
+    </div>
     <div class="card-block">
     <!--
       capital koppa, cyrillic ë, copyright, shima, psi, shima
@@ -160,7 +178,135 @@
 </section>
 
 <section class="card">
-  <h2 id="password" class="card-header">Password</h2>
+  <h3 id="wires-complicated" class="card-header">Complicated Wires</h3>
+    <table class="table table-bordered table-hover">
+      <thead class="thead-inverse">
+        <tr>
+          <th class="invisible"></th> <!-- wire color column -->
+          <th>LED & Star</th>
+          <th>LED</th>
+          <th>Star</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-xs-right text-primary" scope="row">Blue</th>
+          <td>Parallel</td>
+          <td>Parallel</td>
+          <td>No</td>
+          <td>Even #</td>
+        </tr>
+        <tr>
+          <th class="text-xs-right text-danger" scope="row">Red</th>
+          <td>Batteries</td>
+          <td>Batteries</td>
+          <td>Cut</td>
+          <td>Even #</td>
+        </tr>
+        <tr>
+          <th class="text-xs-right" scope="row"><span class="text-danger">Red</span> & <span class="text-primary">Blue</span></th>
+          <td>No</td>
+          <td>Even #</td>
+          <td>Parallel</td>
+          <td>Even #</td>
+        </tr>
+        <tr>
+          <th class="text-xs-right" scope="row">White</th>
+          <td>Batteries</td>
+          <td>No</td>
+          <td>Cut</td>
+          <td>Cut</td>
+        </tr>
+      </tbody>
+    </table>
+  <div class="small p-1">
+    <p>Batteries = cut if the bomb has two or more batteries</p>
+    <p>Even # = cut if the last digit of serial is even</p>
+    <p>Parallel = cut if bomb has parallel port</p>
+  </div>
+  
+</section>
+<section class="card">
+<h3 id="maze" class="card-header">Mazes <small>(top left = 1,1)</small></h3>
+  <div class="card-block row">
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">1,2</span> | <span class="tag tag-success">6,3</span></h4>
+      <img class="img-fluid img-maze" src="img/maze0.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!-- Circle A = (Column 1, Row 2) <br/> Circle B = (Column 6, Row 3) -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">2,4</span> | <span class="tag tag-success">5,2</span></h4>
+      <img class="img-fluid img-maze" src="img/maze1.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">4,4</span> | <span class="tag tag-success">6,4</span></h4>
+      <img class="img-fluid img-maze" src="img/maze2.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">1,1</span> | <span class="tag tag-success">1,4</span></h4>
+      <img class="img-fluid img-maze" src="img/maze3.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">4,6</span> | <span class="tag tag-success">5,3</span></h4>
+      <img class="img-fluid img-maze" src="img/maze4.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">3,5</span> | <span class="tag tag-success">5,1</span></h4>
+      <img class="img-fluid img-maze" src="img/maze5.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">2,1</span> | <span class="tag tag-success">2,6</span></h4>
+      <img class="img-fluid img-maze" src="img/maze6.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">3,4</span> | <span class="tag tag-success">4,1</span></h4>
+      <img class="img-fluid img-maze" src="img/maze7.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    <figure class="col-sm-4">
+      <h4 class="text-xs-center"><span class="tag tag-success">1,5</span> | <span class="tag tag-success">3,2</span></h4>
+      <img class="img-fluid img-maze" src="img/maze8.svg"/>
+      <figcaption class="figure-caption text-xs-center">
+        <!--  -->
+      </figcaption>
+    </figure>
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</section>
+
+<section class="card">
+  <h3 id="password" class="card-header">Password</h3>
   <div class="card-block">
     <dl>
       <div class="col-sm-1 mb-1">
