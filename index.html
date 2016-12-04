@@ -8,7 +8,7 @@
   <!-- https://v4-alpha.getbootstrap.com/content/typography/ -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container mt-3">
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link text-success" href="#wires">Wires [done]</a>
@@ -84,10 +84,10 @@
     <div class="card-block pt-0">
       <h4>Releasing a Held Button</h4>
       <ul>
-        <li><span class="tag tag-primary">Blue</span> strip: release when the countdown timer has a <strong>4 in any position</strong>.</li>
-        <li><span class="tag tag-default">White</span> strip: release when the countdown timer has a <strong>1 in any position</strong>.</li>
-        <li><span class="tag tag-warning">Yellow</span> strip: release when the countdown timer has a <strong>5 in any position</strong>.</li>
-        <li><em>Any other</em> color strip: release when the countdown timer has a <strong>1 in any position</strong>.</li>
+        <li><span class="tag tag-primary">Blue</span> strip: <strong>4 in any position</strong>.</li>
+        <li><span class="tag tag-default">White</span> strip: <strong>1 in any position</strong>.</li>
+        <li><span class="tag tag-warning">Yellow</span> strip: <strong>5 in any position</strong>.</li>
+        <li>Other <strong>1 in any position</strong>.</li>
       </ul>
     </div>
   </section>
@@ -178,6 +178,34 @@
 </section>
 
 <section class="card">
+    <h3 id="simon" class="card-header">Simon Says</h3>
+    <div class="card-block">
+      <p>Placeholder</p>
+    </div>
+</section>
+
+<section class="card">
+    <h3 id="first" class="card-header">Who’s on First</h3>
+    <div class="card-block">
+      <p>Placeholder</p>
+    </div>
+</section>
+
+<section class="card">
+    <h3 id="memory" class="card-header">Memory</h3>
+    <div class="card-block">
+      <p>Placeholder</p>
+    </div>
+</section>
+
+<section class="card">
+    <h3 id="morse" class="card-header">Morse Code</h3>
+    <div class="card-block">
+      <p>Placeholder</p>
+    </div>
+</section>
+
+<section class="card">
   <h3 id="wires-complicated" class="card-header">Complicated Wires</h3>
     <table class="table table-bordered table-hover">
       <thead class="thead-inverse">
@@ -225,8 +253,15 @@
     <p>Even # = cut if the last digit of serial is even</p>
     <p>Parallel = cut if bomb has parallel port</p>
   </div>
-  
 </section>
+
+<section class="card">
+    <h3 id="wires-sequences" class="card-header">Wire Sequences</h3>
+    <div class="card-block">
+      <p>Placeholder</p>
+    </div>
+</section>
+
 <section class="card">
 <h3 id="maze" class="card-header">Mazes <small>(top left = 1,1)</small></h3>
   <div class="card-block row">
