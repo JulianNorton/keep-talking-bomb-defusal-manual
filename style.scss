@@ -15,6 +15,7 @@ dl div:nth-child(even) dt {
   color: $brand-secondary;
 }
 
-dd {
-  margin-left: 1em;
+.img-maze {
+    min-height: 100px;
+    max-height: 25vh
 }
