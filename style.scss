@@ -14,7 +14,16 @@ dl div:nth-child(even) dt {
   color: $brand-secondary;
 }
 
+.tag-black {
+    background: #000;
+}
+
 .img-maze {
     min-height: 100px;
     max-height: 25vh
+}
+
+.morse {
+    font-family: monospace;
+    letter-spacing: .1em;
 }
