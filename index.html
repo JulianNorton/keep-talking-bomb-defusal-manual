@@ -1,5 +1,5 @@
 <html>
-  <title>Bomb Defusal Manual</title>
+<title>Bomb Defusal Manual</title>
 <!-- For the game -->
 <!-- "Keep Talking and Nobody Explodes" v1.3 code: 241 -->
 
@@ -8,7 +8,7 @@
   <!-- https://v4-alpha.getbootstrap.com/content/typography/ -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="container mt-3">
+<body class="container mt-3 pb-1">
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link text-success" href="#wires">Wires [done]</a>
@@ -26,36 +26,70 @@
   </nav>
   <section class="card">
     <h3 id="wires" class="card-header">Wires</h3>
-    <div class="card-block">
-      <dl>
-        <div>
+    <div>
+      <dl class="list-group list-group-flush">
+        <div class="list-group-item">
           <dt class="h3">3 wires</dt>
-          <dd class="lead">No <span class="tag tag-danger">red</span> wires, cut the second wire.</dd>
-          <dd class="lead">Last wire is <span class="tag tag-default">white</span>, cut the last wire.</dd>
-          <dd class="lead">More than one <span class="tag tag-primary">blue</span> wire, cut the last <span class="tag tag-primary">blue</span> wire.</dd>
-          <dd class="lead">Otherwise, cut the last wire.</dd>
+          <dd class="lead ml-1">
+            No <span class="tag tag-danger">red</span> = Cut 2nd.
+          </dd>
+          <dd class="lead ml-1">
+            Last is <span class="tag tag-default">white</span> = Cut last.
+          </dd>
+          <dd class="lead ml-1">
+            <span class="tag tag-primary">Blue</span> wires = Cut last <span class="tag tag-primary">blue</span>.
+          </dd>
+          <dd class="lead ml-1">
+            Else = Cut last
+          </dd>
         </div>
-        <div>
+        <div class="list-group-item">
           <dt class="h3">4 wires</dt>
-          <dd class="lead">If there is more than one <span class="tag tag-danger">red</span> wire and the last digit of the serial number is odd, cut the last <span class="tag tag-danger">red</span> wire.</dd>
-          <dd class="lead">Otherwise, if the last wire is <span class="tag tag-warning">yellow</span> and there are no <span class="tag tag-danger">red</span> wires, cut the first wire.</dd>
-          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-primary">blue</span> wire, cut the first wire.</dd>
-          <dd class="lead">Otherwise, if there is more than one <span class="tag tag-warning">yellow</span> wire, cut the last wire.</dd>
-          <dd class="lead">Otherwise, cut the second wire.</dd>
+          <dd class="lead ml-1">
+            <span class="tag tag-danger">red</span> wires & last serial odd = Cut last <span class="tag tag-danger">red</span>
+          </dd>
+          <dd class="lead ml-1">
+            Last is <span class="tag tag-warning">yellow</span> & no <span class="tag tag-danger">red</span> = Cut 1st
+          </dd>
+          <dd class="lead ml-1">
+            Exactly 1 <span class="tag tag-primary">blue</span> = Cut 1st
+          </dd>
+          <dd class="lead ml-1">
+            <span class="tag tag-warning">yellow</span> wire<span class="font-weight-bold">s</span> = Cut last
+          </dd>
+          <dd class="lead ml-1">
+            All else = Cut 2nd
+          </dd>
         </div>
-        <div>
+        <div class="list-group-item">
           <dt class="h3">5 wires</dt>
-          <dd class="lead">If the last wire is black and the last digit of the serial number is odd, cut the fourth wire.</dd>
-          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-danger">red</span> wire and there is more than one <span class="tag tag-warning">yellow</span> wire, cut the first wire.</dd>
-          <dd class="lead">Otherwise, if there are no black wires, cut the second wire.</dd>
-          <dd class="lead">Otherwise, cut the first wire.</dd>
+          <dd class="lead ml-1">
+            Last is <span class="tag tag-default tag-black">black</span> & last serial odd = Cut 4th
+          </dd>
+          <dd class="lead ml-1">
+            Only 1 <span class="tag tag-danger">red</span> & <span class="tag tag-warning">yellow</span> wire<span class="font-weight-bold">s</span> = Cut 1st
+          </dd>
+          <dd class="lead ml-1">
+            No <span class="tag tag-default tag-black">black</span> = Cut 2nd
+          </dd>
+          <dd class="lead ml-1">
+            All else = Cut 1st
+          </dd>
         </div>
-        <div>
+        <div class="list-group-item">
           <dt class="h3">6 wires</dt>
-          <dd class="lead">If there are no <span class="tag tag-warning">yellow</span> wires and the last digit of the serial number is odd, cut the third wire.</dd>
-          <dd class="lead">Otherwise, if there is exactly one <span class="tag tag-warning">yellow</span> wire and there is more than one <span class="tag tag-default">white</span> wire, cut the fourth wire.</dd>
-          <dd class="lead">Otherwise, if there are no <span class="tag tag-danger">red</span> wires, cut the last wire.</dd>
-          <dd class="lead">Otherwise, cut the fourth wire.</dd>
+          <dd class="lead ml-1">
+            No <span class="tag tag-warning">yellow</span> & last serial odd = Cut 3rd
+          </dd>
+          <dd class="lead ml-1">
+            Only 1 <span class="tag tag-warning">yellow</span> & <span class="tag tag-default">white</span> wire<span class="font-weight-bold">s</span> = Cut 4th
+          </dd>
+          <dd class="lead ml-1">
+            No <span class="tag tag-danger">red</span> = Cut last
+          </dd>
+          <dd class="lead ml-1">
+            All else = Cut 4th
+          </dd>
         </div>
       </dl>
     </div>
@@ -63,41 +97,46 @@
 
   <section class="card">
     <h3 id="button" class="card-header">The Button</h3>
+    <ol class="list-group list-group-flush">
+      <li class="list-group-item lead">
+        <span class="tag tag-primary">Blue button</span> & <span class="tag tag-default tag-black">Abort</span> = Hold…
+      </li>
+      <li class="list-group-item lead">
+        Batteries & <span class="tag tag-default tag-black">Detonate</span> = Tap!
+      </li>
+      <li class="list-group-item lead">
+        <span class="tag tag-default">White button</span> & <span class="tag tag-default tag-black">CAR</span> = Hold…
+      </li>
+      <li class="list-group-item lead">
+        Batteries + <span class="tag tag-default tag-black">FRK</span> = Tap!
+      </li>
+      <li class="list-group-item lead">
+        <span class="tag tag-warning">Yellow button</span> = Hold…
+      </li>
+      <li class="list-group-item lead">
+        <span class="tag tag-danger">Red Button</span> & <span class="tag tag-default tag-black">Hold</span> = Tap!
+      </li>
+    </ol>
     <div class="card-block">
-      <dl>
-        <dt><span class="tag tag-primary">Blue button</span> and the button says <kbd class="tag">Abort</kbd></dt>
-        <dd>hold the button and refer to "Releasing a Held Button".</dd>
-        <dt>If there is more than 1 battery on the bomb and the button says <kbd class="tag">Detonate</kbd></dt>
-        <dd>press and immediately release the button.</dd>
-        <dt><span class="tag tag-default">White button</span> and there is a lit indicator with label <kdb>CAR</kdb></dt>
-        <dd>hold the button and refer to "Releasing a Held Button".</dd>
-        <dt>If there are more than 2 batteries on the bomb and there is a lit indicator with label FRK</dt>
-        <dd>press and immediately release the button.</dd>
-        <dt><span class="tag tag-warning">Yellow button</span></dt>
-        <dd>hold the button and refer to "Releasing a Held Button".</dd>
-        <dt><span class="tag tag-danger">Red</span> and the button says <kbd class="tag">Hold</kbd></dt>
-        <dd>press and immediately release the button.</dd>
-        <dt>If none of the above apply</dt>
-        <dd>hold the button and refer to "Releasing a Held Button".</dd>
-      </dl>
-    </div>
-    <div class="card-block pt-0">
-      <h4>Releasing a Held Button</h4>
-      <ul>
-        <li><span class="tag tag-primary">Blue</span> strip: <strong>4 in any position</strong>.</li>
-        <li><span class="tag tag-default">White</span> strip: <strong>1 in any position</strong>.</li>
-        <li><span class="tag tag-warning">Yellow</span> strip: <strong>5 in any position</strong>.</li>
-        <li>Other <strong>1 in any position</strong>.</li>
-      </ul>
-    </div>
-  </section>
+      <h4>Held button strip color</h4>
+      <ul class="list-unstyled lead">
+        <li class="mb-1"><span class="tag tag-primary">Blue</span> strip: <strong>4</strong></li>
+        <li class="mb-1"><span class="tag tag-warning">Yellow</span> strip: <strong>5</strong></li>
+        <li class="mb-1">
+          <span class="tag tag-default">&nbsp;</span>
+          <span class="tag tag-danger">&nbsp;</span>
+          <span class="tag tag-success">&nbsp;</span>
+          Others: <strong>1</strong></li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="card">
-    <h3 id="symbols" class="card-header">Symbols</h3>
-    <div class="card-block text-xs-center">
-      <img class="img-fluid" alt="original symbols image" src="img/symbols.png">
-    </div>
-    <div class="card-block">
+    <section class="card">
+      <h3 id="symbols" class="card-header">Symbols</h3>
+      <div class="card-block text-xs-center">
+        <img class="img-fluid" alt="original symbols image" src="img/symbols.png">
+      </div>
+      <div class="card-block">
     <!--
       capital koppa, cyrillic ë, copyright, shima, psi, shima
       yus, capital koppa, cyrillic omega w/titlo, paragraph, teh w/ring, cyrillic ë
@@ -178,92 +217,253 @@
 </section>
 
 <section class="card">
-    <h3 id="simon" class="card-header">Simon Says</h3>
-    <div class="card-block">
-      <p>Placeholder</p>
-    </div>
-</section>
-
-<section class="card">
-    <h3 id="first" class="card-header">Who’s on First</h3>
-    <div class="card-block">
-      <p>Placeholder</p>
-    </div>
-</section>
-
-<section class="card">
-    <h3 id="memory" class="card-header">Memory</h3>
-    <div class="card-block">
-      <p>Placeholder</p>
-    </div>
-</section>
-
-<section class="card">
-    <h3 id="morse" class="card-header">Morse Code</h3>
-    <div class="card-block">
-      <p>Placeholder</p>
-    </div>
-</section>
-
-<section class="card">
-  <h3 id="wires-complicated" class="card-header">Complicated Wires</h3>
-    <table class="table table-bordered table-hover">
-      <thead class="thead-inverse">
-        <tr>
-          <th class="invisible"></th> <!-- wire color column -->
-          <th>LED & Star</th>
-          <th>LED</th>
-          <th>Star</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th class="text-xs-right text-primary" scope="row">Blue</th>
-          <td>Parallel</td>
-          <td>Parallel</td>
-          <td>No</td>
-          <td>Even #</td>
-        </tr>
-        <tr>
-          <th class="text-xs-right text-danger" scope="row">Red</th>
-          <td>Batteries</td>
-          <td>Batteries</td>
-          <td>Cut</td>
-          <td>Even #</td>
-        </tr>
-        <tr>
-          <th class="text-xs-right" scope="row"><span class="text-danger">Red</span> & <span class="text-primary">Blue</span></th>
-          <td>No</td>
-          <td>Even #</td>
-          <td>Parallel</td>
-          <td>Even #</td>
-        </tr>
-        <tr>
-          <th class="text-xs-right" scope="row">White</th>
-          <td>Batteries</td>
-          <td>No</td>
-          <td>Cut</td>
-          <td>Cut</td>
-        </tr>
-      </tbody>
-    </table>
-  <div class="small p-1">
-    <p>Batteries = cut if the bomb has two or more batteries</p>
-    <p>Even # = cut if the last digit of serial is even</p>
-    <p>Parallel = cut if bomb has parallel port</p>
+  <h3 id="simon" class="card-header">Simon Says</h3>
+  <div class="card-block">
+    <p>Placeholder</p>
   </div>
 </section>
 
 <section class="card">
-    <h3 id="wires-sequences" class="card-header">Wire Sequences</h3>
-    <div class="card-block">
-      <p>Placeholder</p>
-    </div>
+  <h3 id="first" class="card-header">Who’s on First</h3>
+  <div class="card-block">
+    <p>Placeholder</p>
+  </div>
 </section>
 
 <section class="card">
-<h3 id="maze" class="card-header">Mazes <small>(top left = 1,1)</small></h3>
+  <h3 id="memory" class="card-header">Memory</h3>
+  <div class="card-block">
+    <p>Placeholder</p>
+  </div>
+</section>
+
+<section class="card">
+  <h3 class="card-header" id="morse">Morse Code</h3>
+  <div class="card-block">
+    <div class="input-group input-group-lg">
+      <input type="text" class="form-control" placeholder="Scratch-pad">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+
+      <table class="table table-bordered table-hover">
+        <thead class="thead-inverse sr-only">
+          <tr>
+            <th>Letter</th>
+            <th>Morse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td><td class="morse">.-</td>
+          </tr>
+          <tr>
+            <td>B</td><td class="morse">-...</td>
+          </tr>
+          <tr>
+            <td>C</td><td class="morse">-.-.</td>
+          </tr>
+          <tr>
+            <td>E</td><td class="morse">.</td>
+          </tr>
+          <tr>
+            <td>F</td><td class="morse">..-.</td>
+          </tr>
+          <tr>
+            <td>G</td><td class="morse">--.</td>
+          </tr>
+          <tr>
+            <td>H</td><td class="morse">....</td>
+          </tr>
+          <tr>
+            <td>I</td><td class="morse">..</td>
+          </tr>
+          <tr>
+            <td>K</td><td class="morse">-.-</td>
+          </tr>
+          <tr>
+            <td>L</td><td class="morse">.-..</td>
+          </tr>
+          <tr>
+            <td>M</td><td class="morse">--</td>
+          </tr>
+          <tr>
+            <td>N</td><td class="morse">-.</td>
+          </tr>
+          <tr>
+            <td>O</td><td class="morse">---</td>
+          </tr>
+          <tr>
+            <td>R</td><td class="morse">.-.</td>
+          </tr>
+          <tr>
+            <td>S</td><td class="morse">...</td>
+          </tr>
+          <tr>
+            <td>T</td><td class="morse">-</td>
+          </tr>
+          <tr>
+            <td>V</td><td class="morse">...-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-6">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-inverse sr-only">
+          <tr>
+            <th>Morse</th>
+            <th>Word</th>
+            <th>Mhz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="morse">-... . .- - ...</td>
+            <td>BEATS</td>
+            <td>3.600</td>
+          </tr>
+          <tr>
+            <td class="morse">-... .. ... - .-. ---</td>
+            <td>BISTRO</td>
+            <td>3.552</td>
+          </tr>
+          <tr>
+            <td class="morse">-... --- -- -... ...</td>
+            <td>BO<span class="text-primary font-weight-bold">M</span>BS</td>
+            <td>3.565</td>
+          </tr>
+          <tr>
+            <td class="morse">-... --- -..- . ...</td>
+            <td>BOXES</td>
+            <td>3.535</td>
+          </tr>
+          <tr>
+            <td class="morse">-... .-. . .- -.-</td>
+            <td>BREAK</td>
+            <td>3.572</td>
+          </tr>
+          <tr>
+            <td class="morse">-... .-. .. -.-. -.-</td>
+            <td>BRICK</td>
+            <td>3.575</td>
+          </tr>
+          <tr>
+            <td class="morse">..-. .-.. .. -.-. -.-</td>
+            <td><span class="text-primary font-weight-bold">F</span>LICK</td>
+            <td>3.555</td>
+          </tr>
+          <tr>
+            <td class="morse">.... .- .-.. .-.. ...</td>
+            <td>HALLS</td>
+            <td>3.515</td>
+          </tr>
+          <tr>
+            <td class="morse">.-.. . .- -.- ...</td>
+            <td>LEAKS</td>
+            <td>3.542</td>
+          </tr>
+          <tr>
+            <td class="morse">... .... . .-.. .-..</td>
+            <td>SHELL</td>
+            <td>3.505</td>
+          </tr>
+          <tr>
+            <td class="morse">... .-.. .. -.-. -.-</td>
+            <td>SLICK</td>
+            <td>3.522</td>
+          </tr>
+          <tr>
+            <td class="morse">... - . .- -.-</td>
+            <td>STEAK</td>
+            <td>3.582</td>
+          </tr>
+          <tr>
+            <td class="morse">... - .. -. --.</td>
+            <td>STI<span class="text-primary font-weight-bold">NG</span></td>
+            <td>3.592</td>
+          </tr>
+          <tr>
+            <td class="morse">... - .-. --- -... .</td>
+            <td>STROBE</td>
+            <td>3.545</td>
+          </tr>
+          <tr>
+            <td class="morse">- .-. .. -.-. -.-</td>
+            <td>TRICK</td>
+            <td>3.532</td>
+          </tr>
+          <tr>
+            <td class="morse">...- . -.-. - --- .-.</td>
+            <td><span class="text-primary font-weight-bold">V</span>ECTOR</td>
+            <td>3.595</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h3 id="wires-complicated" class="card-header">Complicated Wires</h3>
+  <table class="table table-bordered table-hover">
+    <thead class="thead-inverse">
+      <tr>
+        <th class="invisible"></th> <!-- wire color column -->
+        <th>LED & Star</th>
+        <th>LED</th>
+        <th>Star</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-xs-right text-primary" scope="row">Blue</th>
+        <td>Parallel</td>
+        <td>Parallel</td>
+        <td>No</td>
+        <td>Even #</td>
+      </tr>
+      <tr>
+        <th class="text-xs-right text-danger" scope="row">Red</th>
+        <td>Batteries</td>
+        <td>Batteries</td>
+        <td>Cut</td>
+        <td>Even #</td>
+      </tr>
+      <tr>
+        <th class="text-xs-right" scope="row"><span class="text-danger">Red</span> & <span class="text-primary">Blue</span></th>
+        <td>No</td>
+        <td>Even #</td>
+        <td>Parallel</td>
+        <td>Even #</td>
+      </tr>
+      <tr>
+        <th class="text-xs-right" scope="row">White</th>
+        <td>Batteries</td>
+        <td>No</td>
+        <td>Cut</td>
+        <td>Cut</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="small p-1">
+    <p>Batteries = Cut if the bomb has two or more batteries</p>
+    <p>Even # = Cut if the last digit of serial is even</p>
+    <p>Parallel = Cut if bomb has parallel port</p>
+  </div>
+</section>
+
+<section class="card">
+  <h3 id="wires-sequences" class="card-header">Wire Sequences</h3>
+  <div class="card-block">
+    <p>Placeholder</p>
+  </div>
+</section>
+
+<section class="card">
+  <h3 id="maze" class="card-header">Mazes <small>(top left = 1,1)</small></h3>
   <div class="card-block row">
     <figure class="col-sm-4">
       <h4 class="text-xs-center"><span class="tag tag-success">1,2</span> | <span class="tag tag-success">6,3</span></h4>
@@ -328,16 +528,7 @@
         <!--  -->
       </figcaption>
     </figure>
-    
-    
-    
-    
-    
-    
-    
-    
   </div>
-  
 </section>
 
 <section class="card">
