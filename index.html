@@ -11,17 +11,17 @@
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link active" href="https://juliannorton.github.io/keep-talking-bomb-defusal-manual">Best bomb manual</a>
-      <a class="nav-item nav-link text-success" href="#wires">Wires</a>
-      <a class="nav-item nav-link text-success" href="#button">Button</a>
-      <a class="nav-item nav-link text-success" href="#symbols">Symbols</a>
-      <a class="nav-item nav-link text-danger" href="#simon">Simon Says</a>
-      <a class="nav-item nav-link text-danger" href="#onfirst">Who's on First</a>
-      <a class="nav-item nav-link text-danger" href="#memory">Memory</a>
-      <a class="nav-item nav-link text-success" href="#morse">Morse Code</a>
-      <a class="nav-item nav-link text-success" href="#wires-complicated">Complicated Wires</a>
-      <a class="nav-item nav-link text-danger" href="#wires-sequence">Wire Sequences</a>
-      <a class="nav-item nav-link text-success" href="#maze">Mazes</a>
-      <a class="nav-item nav-link text-success" href="#password">Passwords</a>
+      <a class="nav-item nav-link" href="#wires">Wires</a>
+      <a class="nav-item nav-link" href="#button">Button</a>
+      <a class="nav-item nav-link" href="#symbols">Symbols</a>
+      <a class="nav-item nav-link" href="#simon">Simon Says</a>
+      <a class="nav-item nav-link" href="#onfirst">Who's on First</a>
+      <a class="nav-item nav-link" href="#memory">Memory</a>
+      <a class="nav-item nav-link" href="#morse">Morse Code</a>
+      <a class="nav-item nav-link" href="#wires-complicated">Complicated Wires</a>
+      <a class="nav-item nav-link" href="#wires-sequences">Wire Sequences</a>
+      <a class="nav-item nav-link" href="#maze">Mazes</a>
+      <a class="nav-item nav-link" href="#password">Passwords</a>
     </div>
   </nav>
   <section class="card">
@@ -305,7 +305,7 @@
   <h3 id="simon" class="card-header">Simon Says</h3>
   <div class="row">
     <div class="col-lg-6">
-    <table class="table table-bordered table-hover ">
+      <table class="table table-bordered table-hover ">
         <thead class="thead-inverse">
           <tr>
             <th>Vowel</th>
@@ -341,7 +341,7 @@
       </table>
     </div>
     <div class="col-lg-6">
-    <table class="table table-bordered table-hover ">
+      <table class="table table-bordered table-hover ">
         <thead class="thead-inverse">
           <tr>
             <th>No Vowel</th>
@@ -380,82 +380,300 @@
 </section>
 
 <section class="card">
-  <h3 id="first" class="card-header">Who's on First</h3>
-  <div class="card-block">
-    <div class="input-group input-group-lg">
-      <input type="text" class="form-control" placeholder="Scratch-pad">
-    </div>
-  </div>
-  <input type="text" class="form-control" placeholder="Scratch-pad">
-  <li class="list-group-item">test</li>
-  <li class="list-group-item">test</li>
-  <li class="list-group-item">test</li>
+  <h3 id="onfirst" class="card-header">Who's on First</h3>
+<!--   <div class="input-group input-group-lg p-a-1">
+    <input type="text" class="form-control" placeholder="Filter">
+  </div> -->
+  <table class="table table-bordered table-hover">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Word</th>
+        <th>Step 1</th>
+        <th>Step 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>_______</td>
+        <td>Left bottom</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>BLANK</td>
+        <td>Right middle</td>
+        <td>WAIT, RIGHT, OKAY, MIDDLE, BLANK</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>Right top</td>
+      </tr>
+      <tr>
+        <td>CEE</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>DISPLAY</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>Done</td>
+        <td></td>
+        <td>SURE, UH HuH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, Uh Uh, DONE</td>
+      </tr>
+      <tr>
+        <td>FIRST</td>
+        <td>Right top</td>
+        <td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td>
+      </tr>
+      <tr>
+        <td>Hold</td>
+        <td></td>
+        <td>YOU ARE, U, DONE, Uh Uh, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD</td>
+      </tr>
+      <tr>
+        <td>HOLD ON</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>LEAD</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>Left</td>
+        <td></td>
+        <td>Right, Left</td>
+      </tr>
+      <tr>
+        <td>LED</td>
+        <td>Left middle</td>
+      </tr>
+      <tr>
+        <td>LEED</td>
+        <td>Left bottom</td>
+      </tr>
+      <tr>
+        <td>Like</td>
+        <td></td>
+        <td>YOU'RE, NEXT, U, UR, HOLD, DONE, Uh Uh, WHAT?, UH HuH, YOU, LIKE</td>
+      </tr>
+      <tr>
+        <td>Middle</td>
+        <td></td>
+        <td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE</td>
+      </tr>
+      <tr>
+        <td>Next</td>
+        <td></td>
+        <td>WHAT?, UH HuH, Uh Uh, YOUR, HOLD, SURE, NEXT</td>
+      </tr>
+      <tr>
+        <td>NO</td>
+        <td>Right bottom</td>
+        <td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO</td>
+      </tr>
+      <tr>
+        <td>NOTHING</td>
+        <td>Left middle</td>
+        <td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING</td>
+      </tr>
+      <tr>
+        <td>OKAY</td>
+        <td>Right top</td>
+        <td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY</td>
+      </tr>
+      <tr>
+        <td>Press</td>
+        <td></td>
+        <td>RIGHT, MIDDLE, YES, READY, PRESS</td>
+      </tr>
+      <tr>
+        <td>READ</td>
+        <td>Right middle</td>
+      </tr>
+      <tr>
+        <td>Ready</td>
+        <td></td>
+        <td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY</td>
+      </tr>
+      <tr>
+        <td>RED</td>
+        <td>Right middle</td>
+      </tr>
+      <tr>
+        <td>REED</td>
+        <td>Left bottom</td>
+      </tr>
+      <tr>
+        <td>Right</td>
+        <td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT</td>
+      </tr>
+      <tr>
+        <td>SAYS</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>SEE</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>Sure</td>
+        <td></td>
+        <td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HuH, UR, SURE</td>
+      </tr>
+      <tr>
+        <td>THEIR</td>
+        <td>Right middle</td>
+      </tr>
+      <tr>
+        <td>THERE</td>
+        <td>Right bottom</td>
+      </tr>
+      <tr>
+        <td>THEY ARE</td>
+        <td>Left middle</td>
+      </tr>
+      <tr>
+        <td>THEY'RE</td>
+        <td>Left bottom</td>
+      </tr>
+      <tr>
+        <td>U</td>
+        <td></td>
+        <td>UH HuH, SURE, NEXT, WHAT?, YOU'RE, UR, Uh Uh, DONE, U</td>
+      </tr>
+      <tr>
+        <td>UH HuH</td>
+        <td></td>
+        <td>UH HuH</td>
+      </tr>
+      <tr>
+        <td>Uh Uh</td>
+        <td></td>
+        <td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH</td>
+      </tr>
+      <tr>
+        <td>UHHH</td>
+        <td></td>
+        <td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH</td>
+      </tr>
+      <tr>
+        <td>UR</td>
+        <td>Left top</td>
+        <td>DONE, U, UR</td>
+      </tr>
+      <tr>
+        <td>Wait</td>
+        <td></td>
+        <td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT</td>
+      </tr>
+      <tr>
+        <td>What</td>
+        <td></td>
+        <td>UHHH, WHAT</td>
+      </tr>
+      <tr>
+        <td>What?</td>
+        <td></td>
+        <td>YOU, HOLD, YOU'RE, YOUR, U, DONE, Uh Uh, LIKE, YOU ARE, UH HuH, UR, NEXT, WHAT?</td>
+      </tr>
+      <tr>
+        <td>W</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>YES</td>
+        <td>Left middle</td>
+        <td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES</td>
+      </tr>
+      <tr>
+        <td>YOU</td>
+        <td>Right middle</td>
+        <td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HuH, UR, HOLD, WHAT?, YOU</td>
+      </tr>
+      <tr>
+        <td>YOU ARE</td>
+        <td>Right bottom</td>
+        <td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, Uh Uh, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td>
+      </tr>
+      <tr>
+        <td>YOUR</td>
+        <td>Right middle</td>
+        <td>Uh Uh, YOU ARE, UH HuH, YOUR</td>
+      </tr>
+      <tr>
+        <td>YOU'RE</td>
+        <td>Right middle</td>
+        <td>YOU, YOU'RE</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="card">
   <h3 id="memory" class="card-header">Memory</h3>
   <div class="row card-block pb-0">
-      <div class="col-md-2 col-sm-12">
-        <h4>Stage #1</h4>
-        <ol>
-          <li>2nd position</li>  
-          <li>2nd position</li>  
-          <li>3rd position</li>  
-          <li>4th position</li>  
-        </ol>
-        <div class="input-group mb-1">
-          <input type="text" class="form-control input-small" placeholder="#, Position">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <h4>Stage #2</h4>
-        <ol>
-          <li>Label 4</li>  
-          <li>S1 Position</li>  
-          <li>1st position</li>  
-          <li>S1 Position</li>  
-        </ol>
-        <div class="input-group mb-1">
-          <input type="text" class="form-control input-small" placeholder="#, Position">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <h4>Stage #3</h4>
-        <ol>
-          <li>Label S2</li>  
-          <li>Label S1</li>  
-          <li>3rd position</li>  
-          <li>Label 4</li>  
-        </ol>
-        <div class="input-group mb-1">
-          <input type="text" class="form-control input-small" placeholder="#, Position">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <h4>Stage #4</h4>
-        <ol>
-          <li>S1 Position</li>  
-          <li>1st position</li>  
-          <li>S2 Position</li>  
-          <li>S2 Position</li>  
-        </ol>
-        <div class="input-group mb-1">
-          <input type="text" class="form-control input-small" placeholder="#, Position">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <h4>Stage #5</h4>
-        <ol>
-          <li>Label S1</li>  
-          <li>Label S2</li>  
-          <li>Label S4</li>  
-          <li>Label S3</li>  
-        </ol>
-        <div class="input-group" style="max-width: 10em">
-          <input type="text" class="form-control input-small" placeholder="#, Position">
-        </div>
+    <div class="col-md-2 col-sm-12">
+      <h4>Stage #1</h4>
+      <ol>
+        <li>2nd position</li>  
+        <li>2nd position</li>  
+        <li>3rd position</li>  
+        <li>4th position</li>  
+      </ol>
+      <div class="input-group mb-1">
+        <input type="text" class="form-control input-small" placeholder="#, Position">
       </div>
     </div>
+    <div class="col-md-2 col-sm-12">
+      <h4>Stage #2</h4>
+      <ol>
+        <li>Label 4</li>  
+        <li>S1 Position</li>  
+        <li>1st position</li>  
+        <li>S1 Position</li>  
+      </ol>
+      <div class="input-group mb-1">
+        <input type="text" class="form-control input-small" placeholder="#, Position">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <h4>Stage #3</h4>
+      <ol>
+        <li>Label S2</li>  
+        <li>Label S1</li>  
+        <li>3rd position</li>  
+        <li>Label 4</li>  
+      </ol>
+      <div class="input-group mb-1">
+        <input type="text" class="form-control input-small" placeholder="#, Position">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <h4>Stage #4</h4>
+      <ol>
+        <li>S1 Position</li>  
+        <li>1st position</li>  
+        <li>S2 Position</li>  
+        <li>S2 Position</li>  
+      </ol>
+      <div class="input-group mb-1">
+        <input type="text" class="form-control input-small" placeholder="#, Position">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <h4>Stage #5</h4>
+      <ol>
+        <li>Label S1</li>  
+        <li>Label S2</li>  
+        <li>Label S4</li>  
+        <li>Label S3</li>  
+      </ol>
+      <div class="input-group" style="max-width: 10em">
+        <input type="text" class="form-control input-small" placeholder="#, Position">
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="card">
@@ -678,9 +896,38 @@
 
 <section class="card">
   <h3 id="wires-sequences" class="card-header">Wire Sequences</h3>
-  <div class="card-block">
-    <p>Placeholder</p>
-  </div>
+  <table class="table table-bordered table-hover ">
+        <thead class="thead-inverse">
+          <tr>
+            <th class="bg-danger">Red</th>
+            <th class="bg-primary">Blue</th>
+            <th class="">Black</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-xs-right text-primary" scope="row">No strikes</th>
+            <td>Blue</td>
+            <td>Red</td>
+            <td>Yellow</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <th class="text-xs-right text-primary" scope="row">1 strike</th>
+            <td>Yellow</td>
+            <td>Green</td>
+            <td>Blue</td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <th class="text-xs-right text-primary" scope="row">2 strikes</th>
+            <td>Green</td>
+            <td>Red</td>
+            <td>Yellow</td>
+            <td>Blue</td>
+          </tr>
+        </tbody>
+      </table>
 </section>
 
 <section class="card">
