@@ -22,6 +22,7 @@
       <a class="nav-item nav-link" href="#morse">Morse Code</a>
       <a class="nav-item nav-link" href="#maze">Mazes</a>
       <a class="nav-item nav-link" href="#password">Passwords</a>
+      <a class="nav-item nav-link" href="#knob">Knob</a>
     </div>
   </nav>
   <section class="card">
@@ -308,7 +309,7 @@
       <table class="table table-bordered table-hover ">
         <thead class="thead-inverse">
           <tr>
-            <th>Vowel</th>
+            <th class="text-xs-right">Vowel</th>
             <th class="bg-danger">Red</th>
             <th class="bg-primary">Blue</th>
             <th class="bg-success">Green</th>
@@ -317,21 +318,21 @@
         </thead>
         <tbody>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">No strikes</th>
+            <th class="text-xs-right" scope="row">No strikes</th>
             <td>Blue</td>
             <td>Red</td>
             <td>Yellow</td>
             <td>Green</td>
           </tr>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">1 strike</th>
+            <th class="text-xs-right" scope="row">1 strike</th>
             <td>Yellow</td>
             <td>Green</td>
             <td>Blue</td>
             <td>Red</td>
           </tr>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">2 strikes</th>
+            <th class="text-xs-right" scope="row">2 strikes</th>
             <td>Green</td>
             <td>Red</td>
             <td>Yellow</td>
@@ -353,21 +354,21 @@
         </thead>
         <tbody>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">No strikes</th>
+            <th class="text-xs-right" scope="row">No strikes</th>
             <td>Blue</td>
             <td>Yellow</td>
             <td>Green</td>
             <td>Red</td>
           </tr>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">1 strike</th>
+            <th class="text-xs-right" scope="row">1 strike</th>
             <td>Red</td>
             <td>Blue</td>
             <td>Green</td>
             <td>Red</td>
           </tr>
           <tr>
-            <th class="text-xs-right text-primary" scope="row">2 strikes</th>
+            <th class="text-xs-right" scope="row">2 strikes</th>
             <td>Yellow</td>
             <td>Green</td>
             <td>Blue</td>
@@ -923,71 +924,71 @@
 <section class="card">
   <h3 id="wires-sequences" class="card-header">Wire Sequences</h3>
   <table class="table table-bordered table-hover ">
-        <thead class="thead-inverse">
-          <tr>
-            <th class="text-sm-right"># to cut</th>
-            <th class="bg-danger">Red</th>
-            <th class="bg-primary">Blue</th>
-            <th style="background: #000">Black</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="text-sm-right" scope="row">1</th>
-            <td>C <input class="ml-1" type="checkbox"/></td>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>A, B, C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">2</th>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">3</th>
-            <td>A <input class="ml-1" type="checkbox"/></td>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">4</th>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-            <td>A <input class="ml-1" type="checkbox"/></td>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">5</th>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">6</th>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-            <td>B, C <input class="ml-1" type="checkbox"/></td>
-            <td>B, C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">7</th>
-            <td>A, B, C <input class="ml-1" type="checkbox"/></td>
-            <td>C <input class="ml-1" type="checkbox"/></td>
-            <td>A, B <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">8</th>
-            <td>A, B <input class="ml-1" type="checkbox"/></td>
-            <td>A, C <input class="ml-1" type="checkbox"/></td>
-            <td>C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-          <tr>
-            <th class="text-sm-right" scope="row">8</th>
-            <td>B <input class="ml-1" type="checkbox"/></td>
-            <td>A <input class="ml-1" type="checkbox"/></td>
-            <td>C <input class="ml-1" type="checkbox"/></td>
-          </tr>
-        </tbody>
-      </table>
+    <thead class="thead-inverse">
+      <tr>
+        <th class="text-sm-right"># to cut</th>
+        <th class="bg-danger">Red</th>
+        <th class="bg-primary">Blue</th>
+        <th style="background: #000">Black</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-sm-right" scope="row">1</th>
+        <td>C <input class="ml-1" type="checkbox"/></td>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>A, B, C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">2</th>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">3</th>
+        <td>A <input class="ml-1" type="checkbox"/></td>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">4</th>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+        <td>A <input class="ml-1" type="checkbox"/></td>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">5</th>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">6</th>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+        <td>B, C <input class="ml-1" type="checkbox"/></td>
+        <td>B, C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">7</th>
+        <td>A, B, C <input class="ml-1" type="checkbox"/></td>
+        <td>C <input class="ml-1" type="checkbox"/></td>
+        <td>A, B <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">8</th>
+        <td>A, B <input class="ml-1" type="checkbox"/></td>
+        <td>A, C <input class="ml-1" type="checkbox"/></td>
+        <td>C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+      <tr>
+        <th class="text-sm-right" scope="row">8</th>
+        <td>B <input class="ml-1" type="checkbox"/></td>
+        <td>A <input class="ml-1" type="checkbox"/></td>
+        <td>C <input class="ml-1" type="checkbox"/></td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="card">
@@ -1146,6 +1147,63 @@
     </dl>
   </div>
 </section>
+
+<section class="card">
+  <h3 id="knob" class="card-header">The Knob</h3>
+  <table class="table table-bordered table-hover table-reflow">
+    <thead class="thead-inverse">
+      <tr>
+        <th class="text-xs-right">Top row <small>(lights)</small></th>
+        <th class="text-xs-right">Bottom row <small>(lights)</small></th>
+        <th class="text-xs-right">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="text-primary font-weight-bold">0 0 0</span> 0 1 0</td>
+        <td>1 0 0 1 1 1</td>
+        <th scope="row">Left</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">0 0 0</span> 0 1 0</td>
+        <td>0 0 0 1 1 0</td>
+        <th scope="row">Left</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">0 0 1</span> 0 1 1</td>
+        <td>1 1 1 1 0 1</td>
+        <th scope="row">Up</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">1 0 1</span> 0 1 0</td>
+        <td>0 1 1 0 1 1</td>
+        <th scope="row">Up</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">0 1</span> 1 0 0 1</td>
+        <td>1 1 1 1 0 1</td>
+        <th scope="row">Down</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">1 0 1 0</span> 1 0</td>
+        <td>0 1 0 0 0 1</td>
+        <th scope="row">Down</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">1 0 1 1</span> 1 1</td>
+        <td>1 1 1 0 1 0</td>
+        <th scope="row">Right</th>
+      </tr>
+      <tr>
+        <td><span class="text-primary font-weight-bold">1 0 1 1</span> 0 0</td>
+        <td>1 1 1 0 1 0</td>
+        <th scope="row">Right</th>
+      </tr>
+      
+    </tbody>
+  </table>
+</section>
+
 <footer>
   <small style="position: fixed; bottom:0; color: #666; z-index: -1;">Verification Code: 241</small>
 </footer>
